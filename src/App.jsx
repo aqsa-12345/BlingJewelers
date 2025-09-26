@@ -1,6 +1,7 @@
 import "bootstrap/dist/css/bootstrap.css"
 import "bootstrap/dist/js/bootstrap.js"
-import LandingPage from "./Landingpage.jsx"
+import '@fortawesome/fontawesome-free/css/all.min.css';
+import LandingPage from "./Landingpage";
 function App()
 {
   return <><LandingPage/></>

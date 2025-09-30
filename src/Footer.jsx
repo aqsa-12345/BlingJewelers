@@ -33,7 +33,7 @@ function Footer() {
         <div className="row">
 
           {/* Logo and Social */}
-          <div className="col-md-3 mb-4">
+          <div className="col-6 col-md-3 mb-4">
             <h4 className="fw-bold">BLING <br /> JEWELLERY</h4>
             <p className="text-muted small">NOT FOR ORDINARY</p>
             <div>

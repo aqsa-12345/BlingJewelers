@@ -24,7 +24,7 @@ function  Items()
               alt={items.name}
               className="img-fluid"
               style={{
-                height: "350px",
+                height: "30vh",
                 aspectRatio: "1/1",
                 objectFit: "cover",
                 borderRadius: "400px",

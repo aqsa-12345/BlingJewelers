@@ -35,7 +35,7 @@ function Products() {
       <h2 className="text-center mb-4">DAILY WEAR</h2>
       <div className="row">
         {ringData.map((ring) => (
-          <div className="col-md-3 mb-4" key={ring.id}>
+          <div className="col-6 col-md-3 col-sm-3 mb-4" key={ring.id}>
             <div className="card h-100 text-center">
               <div className="position-relative">
                 <img src={ring.image} className="card-img-top" alt={`Ring ${ring.id}`} />
@@ -56,7 +56,7 @@ function Products() {
           </div>
         ))}
       </div>
-      
+
     </div>
     </>
     

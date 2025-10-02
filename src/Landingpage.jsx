@@ -11,7 +11,7 @@ function LandingPage()
     <HeroSection/>
     <Items/>
     <Products/>
-    <Footer/>
-    </>
+    <Footer/> 
+  </>
 }
 export default LandingPage

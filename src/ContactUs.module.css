@@ -1,0 +1,106 @@
+/* ==== Background Styling ==== */
+.bgContainer {
+  background: url("/banner.jpg") center/cover no-repeat;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+}
+
+/* ==== Glass Card ==== */
+.glassCard {
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(12px);
+  border-radius: 20px;
+  padding: 40px 45px;
+  width: 100%;
+  max-width: 500px;
+  box-shadow: 0 4px 25px rgba(0, 0, 0, 0.25);
+  color: #4b3c2f;
+}
+
+/* ==== Icon Circle ==== */
+.logoCircle {
+  background-color: #4b3c2f;
+  color: white;
+  width: 65px;
+  height: 65px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 28px;
+  margin: 0 auto 10px;
+}
+
+/* ==== Text Headings ==== */
+.logoText {
+  font-weight: 700;
+  color: #4b3c2f;
+  margin-top: 5px;
+  letter-spacing: 1px;
+}
+
+.subtitleText {
+  color: #6b5644;
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+/* ==== Label Styling ==== */
+.label {
+  display: block;
+  font-weight: 500;
+  color: #4b3c2f;
+  margin-bottom: 6px;
+  font-size: 15px;
+}
+
+/* ==== Input & Textarea Fields ==== */
+.inputField,
+.textareaField {
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.85);
+  border: 1px solid rgba(75, 60, 47, 0.3);
+  border-radius: 10px;
+  padding: 10px 12px;
+  font-size: 15px;
+  color: #4b3c2f;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+.inputField:focus,
+.textareaField:focus {
+  border-color: #4b3c2f;
+  box-shadow: 0 0 5px rgba(75, 60, 47, 0.3);
+}
+
+/* ==== Button ==== */
+.sendButton {
+  background-color: #4b3c2f !important;
+  border: none !important;
+  border-radius: 10px !important;
+  padding: 12px;
+  font-size: 16px;
+  font-weight: 500;
+  color: white !important;
+  transition: background 0.3s ease;
+}
+
+.sendButton:hover {
+  background-color: #6b5644 !important;
+}
+
+/* ==== Responsive Adjustments ==== */
+@media (max-width: 576px) {
+  .glassCard {
+    padding: 30px 25px;
+  }
+  .logoCircle {
+    width: 55px;
+    height: 55px;
+    font-size: 24px;
+  }
+}

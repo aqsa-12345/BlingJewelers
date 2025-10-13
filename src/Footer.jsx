@@ -1,9 +1,12 @@
 
+import React from "react";
+import styles from "./Footer.module.css";
+
 function Footer() {
   return (
-    <footer className="bg-light text-dark pt-4 mt-5 border-top">
+    <footer className={styles.footer}>
       {/* Top Black Strip */}
-      <div className="bg-dark text-white py-4">
+      <div className={styles.topStrip}>
         <div className="container d-flex flex-column flex-md-row justify-content-between text-center text-md-start">
           <div className="mb-3 mb-md-0">
             <i className="fas fa-car me-2"></i>
@@ -29,46 +32,46 @@ function Footer() {
       </div>
 
       {/* Main Footer */}
-      <div className="container py-5">
+      <div className={`container ${styles.mainFooter}`}>
         <div className="row">
 
           {/* Logo and Social */}
-          <div className="col-6 col-md-3 mb-4">
-            <h4 className="fw-bold">BLING <br /> JEWELLERY</h4>
-            <p className="text-muted small">NOT FOR ORDINARY</p>
-            <div>
-              <a href="#" className="me-3 text-dark"><i className="fab fa-facebook fa-lg"></i></a>
-              <a href="#" className="text-dark"><i className="fab fa-instagram fa-lg"></i></a>
+          <div className={`col-6 col-md-3 mb-4 ${styles.logoSection}`}>
+            <h4>BLING <br /> JEWELLERY</h4>
+            <p>NOT FOR ORDINARY</p>
+            <div className={styles.socialIcons}>
+              <a href="#"><i className="fab fa-facebook fa-lg"></i></a>
+              <a href="#"><i className="fab fa-instagram fa-lg"></i></a>
             </div>
           </div>
 
           {/* Policies */}
           <div className="col-md-3 mb-4">
-            <h5 className="fw-bold">Our Policies</h5>
-            <ul className="list-unstyled">
-              <li><a href="#" className="text-dark text-decoration-none">Shipping Policy</a></li>
-              <li><a href="#" className="text-dark text-decoration-none">Privacy Policy</a></li>
-              <li><a href="#" className="text-dark text-decoration-none">Terms & Conditions</a></li>
+            <h5 className={styles.linkTitle}>Our Policies</h5>
+            <ul className={styles.linkList}>
+              <li><a href="#">Shipping Policy</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">Terms & Conditions</a></li>
             </ul>
           </div>
 
           {/* Information */}
           <div className="col-md-3 mb-4">
-            <h5 className="fw-bold">Information</h5>
-            <ul className="list-unstyled">
-              <li><a href="#" className="text-dark text-decoration-none">Company Profile</a></li>
-              <li><a href="#" className="text-dark text-decoration-none">Contact Us</a></li>
-              <li><a href="#" className="text-dark text-decoration-none">Store Locator</a></li>
+            <h5 className={styles.linkTitle}>Information</h5>
+            <ul className={styles.linkList}>
+              <li><a href="#">Company Profile</a></li>
+              <li><a href="#">Contact Us</a></li>
+              <li><a href="#">Store Locator</a></li>
             </ul>
           </div>
 
           {/* Newsletter Signup */}
-          <div className="col-md-3">
-            <h5 className="fw-bold">Newsletter Signup</h5>
-            <p className="text-muted small">Subscribe to our newsletter and get 5% off your first purchase</p>
-            <form className="d-flex">
-              <input type="email" className="form-control me-2" placeholder="Your email address" />
-              <button className="btn btn-dark">Subscribe</button>
+          <div className={`col-md-3 ${styles.newsletter}`}>
+            <h5 className={styles.linkTitle}>Newsletter Signup</h5>
+            <p>Subscribe to our newsletter and get 5% off your first purchase</p>
+            <form>
+              <input type="email" placeholder="Your email address" />
+              <button>Subscribe</button>
             </form>
           </div>
 

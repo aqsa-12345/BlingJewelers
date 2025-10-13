@@ -1,0 +1,64 @@
+.navbar {
+  font-family: "Poppins", sans-serif;
+  padding: 0.7rem 1rem;
+}
+
+/* Brand Section */
+.navbarBrand {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  height: 10vh;
+  object-fit:contain;
+  margin-right: 10px;
+}
+
+.brandText {
+  font-size: 1.6rem;
+  background: linear-gradient(90deg, #c9a24e, #f3d27e);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  letter-spacing: 1px;
+}
+
+/* Nav Links */
+.navLink {
+  color: #4b3c2f !important;
+  font-weight: 500;
+  margin: 0 10px;
+  transition: color 0.3s ease;
+}
+
+.navLink:hover {
+  color: #c9a24e !important;
+}
+
+/* Dropdown Menu */
+.dropdownMenu {
+  border: none;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.dropdownItem {
+  color: #4b3c2f;
+  font-weight: 500;
+}
+
+.dropdownItem:hover {
+  background-color: #f9f6f1;
+  color: #c9a24e;
+}
+
+/* Icons */
+.iconLink {
+  color: #4b3c2f !important;
+  font-weight: 500;
+  margin-left: 15px;
+  transition: color 0.3s ease;
+}
+
+.iconLink:hover {
+  color: #c9a24e !important;
+}

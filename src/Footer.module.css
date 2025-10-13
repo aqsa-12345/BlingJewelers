@@ -1,0 +1,113 @@
+.footer {
+  background-color: #f5f2eeff;
+  color: #212529;
+  padding-top: 1.5rem;
+  margin-top: 3rem;
+  border-top: 1px solid #ddd;
+}
+
+/* 🔲 Top Black Strip */
+.topStrip {
+  background-color: #000;
+  color: #fff;
+  padding: 1.5rem 0;
+}
+
+.topStrip strong {
+  font-size: 1rem;
+  letter-spacing: 0.5px;
+}
+
+.topStrip p {
+  margin-bottom: 0;
+  font-size: 0.85rem;
+  color: #dcdcdc;
+}
+
+/* 🧿 Main Footer */
+.mainFooter {
+  padding: 3rem 0;
+}
+
+/* Logo Section */
+.logoSection h4 {
+  font-weight: bold;
+  letter-spacing: 1px;
+  color: #4b3c2f;
+}
+
+.logoSection p {
+  color: #6c757d;
+  font-size: 0.85rem;
+}
+
+.socialIcons a {
+  color: #212529;
+  margin-right: 0.8rem;
+  transition: color 0.3s ease;
+}
+
+.socialIcons a:hover {
+  color: #4b3c2f;
+}
+
+/* 📜 Link Section */
+.linkTitle {
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: #0f0f0fff;
+}
+
+.linkList {
+  list-style: none;
+  padding-left: 0;
+}
+
+.linkList li {
+  margin-bottom: 0.5rem;
+}
+
+.linkList a {
+  text-decoration: none;
+  color: #212529;
+  font-size: 0.9rem;
+  transition: color 0.3s ease;
+}
+
+.linkList a:hover {
+  color: #4b3c2f;
+}
+
+/* 📨 Newsletter Section */
+.newsletter p {
+  color: #6c757d;
+  font-size: 0.85rem;
+}
+
+.newsletter form {
+  display: flex;
+  margin-top: 0.5rem;
+}
+
+.newsletter input {
+  flex: 1;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 0.4rem 0.7rem;
+  font-size: 0.9rem;
+}
+
+.newsletter button {
+  background-color: #000;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 0.4rem 0.9rem;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.newsletter button:hover {
+  background-color: #4b3c2f;
+}

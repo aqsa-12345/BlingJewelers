@@ -1,81 +1,148 @@
-import React, { useState } from "react";
+// import styles from "./LoginPage.module.css";
+// import { Form, Button } from "react-bootstrap";
 
-function LoginPage({ onLogin }) {
-  const [email, setEmail] = useState("");
-  const [password, setPassword] = useState("");
+// function LoginPage() {
+//   return (
+//     <div className={styles.bgContainer}>
+//       <div className={styles.glassCard}>
+//         <div className="text-center mb-4">
+//           <h3 className={styles.logoText}>Bling</h3>
+//           <p className={styles.welcomeText}>Welcome back!</p>
+//         </div>
+//         <Form>
+//           <div className={styles.fieldGroup}>
+//             <Form.Label className={styles.label}>Username or Email</Form.Label>
+//             <Form.Control
+//               type="text"
+//               className={styles.inputField}
+//             />
+//           </div>
+//           <div className={styles.fieldGroup}>
+//             <Form.Label className={styles.label}>Password</Form.Label>
+//             <Form.Control
+//               type="password"
+//               className={styles.inputField}
+//             />
+//           </div>
+//           <Form.Group controlId="formBasicCheckbox" className="mb-3">
+//             <Form.Check
+//               type="checkbox"
+//               label="Remember me"
+//               className={styles.checkboxLabel}
+//             />
+//           </Form.Group>
+//           <div className="d-grid">
+//             <Button type="submit" className={styles.loginButton}>
+//               Log In
+//             </Button>
+//           </div>
+//         </Form>
+//         <div className="text-center mt-3">
+//           <p className={styles.footerText}>
+//             Don’t have an account?{" "}
+//             <a href="#" className={styles.signUpLink}>
+//               Sign Up
+//             </a>
+//           </p>
+//         </div>
+//       </div>
+//     </div>
+//   );
+// }
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
+// export default LoginPage;
 
-    if (email === "test@gmail.com" && password === "12345") {
-      onLogin(); // parent ko batao ke login success hai
-    } else {
-      alert("Invalid Email or Password");
+import React, { useRef, useEffect, useState } from "react";
+import styles from "./LoginPage.module.css";
+import { Form, Button } from "react-bootstrap";
+
+function LoginPage() {
+  const usernameRef = useRef(null);
+  const [focusedInput, setFocusedInput] = useState("");
+
+  useEffect(() => {
+    // inputRef ke through focus
+    if (usernameRef.current) {
+      usernameRef.current.focus();
     }
-  };
+  }, []);
 
   return (
-    <div style={styles.container}>
-      <form onSubmit={handleSubmit} style={styles.form}>
-        <h2 style={{ textAlign: "center" }}>Login Page</h2>
-        <input
-          type="email"
-          placeholder="Enter Email"
-          value={email}
-          onChange={(e) => setEmail(e.target.value)}
-          style={styles.input}
-          required
-        />
-        <input
-          type="password"
-          placeholder="Enter Password"
-          value={password}
-          onChange={(e) => setPassword(e.target.value)}
-          style={styles.input}
-          required
-        />
-        <button type="submit" style={styles.button}>
-          Login
-        </button>
-      </form>
+    <div className={styles.bgContainer}>
+      <div className={styles.glassCard}>
+        <div className="text-center mb-4">
+          <h3 className={styles.logoText}>Bling</h3>
+          <p className={styles.welcomeText}>Welcome back!</p>
+        </div>
+
+        <Form>
+          {/* Username */}
+          <div className={styles.fieldGroup}>
+            <Form.Label
+              className={
+                focusedInput === "username"
+                  ? `${styles.label} ${styles.bold}`
+                  : styles.label
+              }
+            >
+              Username or Email
+            </Form.Label>
+            <Form.Control
+              type="text"
+              className={styles.inputField}
+              onFocus={() => setFocusedInput("username")}
+              onBlur={() => setFocusedInput("")}
+              ref={usernameRef} // React-Bootstrap >=2.x me yeh kaam karega
+            />
+          </div>
+
+          {/* Password */}
+          <div className={styles.fieldGroup}>
+            <Form.Label
+              className={
+                focusedInput === "password"
+                  ? `${styles.label} ${styles.bold}`
+                  : styles.label
+              }
+            >
+              Password
+            </Form.Label>
+            <Form.Control
+              type="password"
+              className={styles.inputField}
+              onFocus={() => setFocusedInput("password")}
+              onBlur={() => setFocusedInput("")}
+            />
+          </div>
+
+          <Form.Group controlId="formBasicCheckbox" className="mb-3">
+            <Form.Check
+              type="checkbox"
+              label="Remember me"
+              className={styles.checkboxLabel}
+            />
+          </Form.Group>
+
+          <div className="d-grid">
+            <Button type="submit" className={styles.loginButton}>
+              Log In
+            </Button>
+          </div>
+        </Form>
+
+        <div className="text-center mt-3">
+          <p className={styles.footerText}>
+            Don’t have an account?{" "}
+            <a href="#" className={styles.signUpLink}>
+              Sign Up
+            </a>
+          </p>
+        </div>
+      </div>
     </div>
   );
 }
 
-const styles = {
-  container: {
-    display: "flex",
-    height: "100vh",
-    justifyContent: "center",
-    alignItems: "center",
-    backgroundColor: "#f5f5dc", // cream background
-  },
-  form: {
-    backgroundColor: "#fff",
-    padding: "30px",
-    borderRadius: "10px",
-    boxShadow: "0px 4px 8px rgba(0,0,0,0.2)",
-    width: "300px",
-    display: "flex",
-    flexDirection: "column",
-  },
-  input: {
-    margin: "10px 0",
-    padding: "10px",
-    fontSize: "16px",
-    borderRadius: "5px",
-    border: "1px solid #ccc",
-  },
-  button: {
-    padding: "10px",
-    backgroundColor: "teal",
-    color: "#fff",
-    border: "none",
-    borderRadius: "5px",
-    cursor: "pointer",
-    fontSize: "16px",
-    marginTop: "10px",
-  },
-};
-
 export default LoginPage;
+
+

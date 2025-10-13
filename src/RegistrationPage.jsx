@@ -1,105 +1,95 @@
-import React, { useState } from "react";
+import styles from "./RegistrationPage.module.css";
+import { Form, Button, Row, Col } from "react-bootstrap";
 
 function RegistrationPage() {
-  const [name, setName] = useState("");
-  const [email, setEmail] = useState("");
-  const [password, setPassword] = useState("");
-  const [confirmPassword, setConfirmPassword] = useState("");
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-
-    if (password !== confirmPassword) {
-      alert("Passwords do not match!");
-      return;
-    }
-
-    alert("Registration successful!");
-  };
-
   return (
-    <div style={styles.container}>
-      <form onSubmit={handleSubmit} style={styles.form}>
-        <h2 style={{ textAlign: "center" }}>Register</h2>
+    <div className={styles.bgContainer}>
+      <div className={styles.glassCard}>
+        {/* Logo + Heading */}
+        <div className="text-center mb-4">
+          <div className={styles.logoCircle}>
+            <i className="bi bi-globe2"></i>
+          </div>
+          <h3 className={styles.logoText}>Bling</h3>
+          <p className={styles.welcomeText}>Create your account</p>
+        </div>
 
-        <input
-          type="text"
-          placeholder="Enter Full Name"
-          value={name}
-          onChange={(e) => setName(e.target.value)}
-          style={styles.input}
-          required
-        />
+        {/* Form Section */}
+        <Form>
+          {/* First and Last Name in Same Row */}
+          <Row className="mb-3">
+            <Col>
+              <div className={styles.fieldGroup}>
+                <Form.Label className={styles.label}>First Name</Form.Label>
+                <Form.Control
+                  type="text"
+                  className={styles.inputField}
+                  placeholder=""
+                />
+              </div>
+            </Col>
+            <Col>
+              <div className={styles.fieldGroup}>
+                <Form.Label className={styles.label}>Last Name</Form.Label>
+                <Form.Control
+                  type="text"
+                  className={styles.inputField}
+                  placeholder=""
+                />
+              </div>
+            </Col>
+          </Row>
 
-        <input
-          type="email"
-          placeholder="Enter Email"
-          value={email}
-          onChange={(e) => setEmail(e.target.value)}
-          style={styles.input}
-          required
-        />
+          {/* Contact Number */}
+          <div className={styles.fieldGroup}>
+            <Form.Label className={styles.label}>Contact Number</Form.Label>
+            <Form.Control
+              type="text"
+              className={styles.inputField}
+              placeholder=""
+            />
+          </div>
 
-        <input
-          type="password"
-          placeholder="Enter Password"
-          value={password}
-          onChange={(e) => setPassword(e.target.value)}
-          style={styles.input}
-          required
-        />
+          {/* Email Address */}
+          <div className={styles.fieldGroup}>
+            <Form.Label className={styles.label}>Email Address</Form.Label>
+            <Form.Control
+              type="email"
+              className={styles.inputField}
+              placeholder=""
+            />
+          </div>
 
-        <input
-          type="password"
-          placeholder="Confirm Password"
-          value={confirmPassword}
-          onChange={(e) => setConfirmPassword(e.target.value)}
-          style={styles.input}
-          required
-        />
+          {/* Password */}
+          <div className={styles.fieldGroup}>
+            <Form.Label className={styles.label}>Password</Form.Label>
+            <Form.Control
+              type="password"
+              className={styles.inputField}
+              placeholder=""
+            />
+          </div>
 
-        <button type="submit" style={styles.button}>
-          Register
-        </button>
-      </form>
+          {/* Signup Button */}
+          <div className="d-grid">
+            <Button type="submit" className={styles.signupButton}>
+              Sign Up
+            </Button>
+          </div>
+        </Form>
+
+        {/* Footer Text */}
+        <div className="text-center mt-3">
+          <p className={styles.footerText}>
+            Already have an account?{" "}
+            <a href="#" className={styles.signInLink}>
+              Log In
+            </a>
+          </p>
+        </div>
+      </div>
     </div>
   );
 }
-
-const styles = {
-  container: {
-    display: "flex",
-    height: "100vh",
-    justifyContent: "center",
-    alignItems: "center",
-    backgroundColor: "#f5f5dc", // cream background
-  },
-  form: {
-    backgroundColor: "#fff",
-    padding: "30px",
-    borderRadius: "10px",
-    boxShadow: "0px 4px 8px rgba(0,0,0,0.2)",
-    width: "320px",
-    display: "flex",
-    flexDirection: "column",
-  },
-  input: {
-    margin: "10px 0",
-    padding: "10px",
-    fontSize: "16px",
-    borderRadius: "5px",
-    border: "1px solid #ccc",
-  },
-  button: {
-    padding: "10px",
-    backgroundColor: "green",
-    color: "#fff",
-    border: "none",
-    borderRadius: "5px",
-    cursor: "pointer",
-    fontSize: "16px",
-    marginTop: "10px",
-  },
-};
 
 export default RegistrationPage;

@@ -1,4 +1,3 @@
-/* ==== Background ==== */
 .bgContainer {
   background: url("/banner.jpg") center/cover no-repeat;
   min-height: 100vh;
@@ -7,8 +6,6 @@
   justify-content: center;
   padding: 30px;
 }
-
-/* ==== Glass Card ==== */
 .glassCard {
   background: rgba(255, 255, 255, 0.15);
   backdrop-filter: blur(12px);
@@ -18,8 +15,6 @@
   max-width: 450px;
   box-shadow: 0 4px 25px rgba(0, 0, 0, 0.25);
 }
-
-/* ==== Logo Circle ==== */
 .logoCircle {
   background-color: #4b3c2f;
   color: white;
@@ -32,40 +27,31 @@
   font-size: 28px;
   margin: 0 auto 10px;
 }
-
-/* ==== Text ==== */
 .logoText {
   font-weight: 700;
   color: #4b3c2f;
   margin-top: 5px;
   letter-spacing: 1px;
 }
-
 .welcomeText {
   color: #6b5644;
   font-size: 14px;
 }
-
-/* ==== Field Group ==== */
 .fieldGroup {
   display: flex;
   flex-direction: column;
-  margin-bottom: 22px; /* extra spacing */
+  margin-bottom: 22px; 
 }
-
-/* ==== Label ==== */
 .label {
   font-weight: 600;
   color: #4b3c2f;
   font-size: 15px;
-  margin-bottom: 10px; /* gap between label & input */
+  margin-bottom: 10px; 
   letter-spacing: 0.5px;
 }
-
-/* ==== Input Fields ==== */
 .inputField {
   width: 100%;
-  background-color: #fff; /* solid white */
+  background-color: #fff; 
   border: 1px solid rgba(75, 60, 47, 0.4);
   border-radius: 10px;
   padding: 12px;
@@ -74,20 +60,16 @@
   outline: none;
   transition: all 0.3s ease;
 }
-
 .inputField:focus {
   border-color: #4b3c2f;
   box-shadow: 0 0 6px rgba(75, 60, 47, 0.3);
   background-color: #faf7f5;
 }
-
-/* ==== Checkbox ==== */
 .checkboxLabel {
   color: #4b3c2f;
   font-size: 14px;
 }
 
-/* ==== Button ==== */
 .loginButton {
   background-color: #4b3c2f !important;
   border: none !important;
@@ -98,33 +80,25 @@
   color: white !important;
   transition: background 0.3s ease;
 }
-
 .loginButton:hover {
   background-color: #6b5644 !important;
 }
-
-/* ==== Footer ==== */
 .footerText {
   color: #4b3c2f;
   font-size: 14px;
 }
-
 .signUpLink {
   color: #4b3c2f;
   font-weight: 600;
   text-decoration: none;
 }
-
 .signUpLink:hover {
   text-decoration: underline;
 }
-
-/* ==== Responsive ==== */
 @media (max-width: 576px) {
   .glassCard {
     padding: 30px 25px;
   }
-
   .logoCircle {
     width: 55px;
     height: 55px;

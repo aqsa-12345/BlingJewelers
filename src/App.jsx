@@ -2,7 +2,7 @@ import "bootstrap/dist/css/bootstrap.css"
 import "bootstrap/dist/js/bootstrap.js"
 import '@fortawesome/fontawesome-free/css/all.min.css';
 //import LandingPage from "./LandingPage";
-import LoginPage from "./LoginPage";
+//import LoginPage from "./LoginPage";
 // import ContactUs from "./ContactUs";
 //  import RegistrationPage from "./RegistrationPage";
 // import ReviewPage from "./ReviewPage";
@@ -12,7 +12,7 @@ function App()
     return(
     <>
     {/* <LandingPage/> */}
-     <LoginPage/>
+     {/* <LoginPage/> */}
      {/* <ContactUs/> */}
     {/* <RegistrationPage/> */}
       {/* <ReviewPage/> */}

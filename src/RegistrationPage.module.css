@@ -1,4 +1,3 @@
-/* ==== Background ==== */
 .bgContainer {
   background: url("/banner.jpg") center/cover no-repeat;
   min-height: 100vh;
@@ -8,7 +7,6 @@
   padding: 30px;
 }
 
-/* ==== Glass Card ==== */
 .glassCard {
   background: rgba(255, 255, 255, 0.15);
   backdrop-filter: blur(12px);
@@ -19,21 +17,6 @@
   box-shadow: 0 4px 25px rgba(0, 0, 0, 0.25);
 }
 
-/* ==== Logo Circle ==== */
-.logoCircle {
-  background-color: #4b3c2f;
-  color: white;
-  width: 65px;
-  height: 65px;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 28px;
-  margin: 0 auto 10px;
-}
-
-/* ==== Texts ==== */
 .logoText {
   font-weight: 700;
   color: #4b3c2f;
@@ -46,7 +29,6 @@
   font-size: 14px;
 }
 
-/* ==== Label/Input Separation ==== */
 .fieldGroup {
   display: flex;
   flex-direction: column;
@@ -59,6 +41,8 @@
   color: #4b3c2f;
   font-size: 15px;
   margin-bottom: 8px;
+  cursor: pointer;
+  transition: all 0.2s ease;
 }
 
 /* ==== Input Fields ==== */
@@ -74,9 +58,24 @@
   transition: all 0.3s ease;
 }
 
-.inputField:focus {
-  border-color: #4b3c2f;
+/* Highlight input when focused */
+.inputField:focus,
+.activeInput {
+  border: 2px solid #4b3c2f;
+  font-weight: bold;
   box-shadow: 0 0 5px rgba(75, 60, 47, 0.3);
+}
+
+/* Highlight label when input is focused */
+.label.activeLabel {
+  font-weight: bold;
+  color: #4b3c2f;
+}
+
+/* Optional: Hover effect for labels */
+.label:hover {
+  font-weight: bold;
+  color: #4b3c2f;
 }
 
 /* ==== Button ==== */
@@ -123,3 +122,4 @@
     font-size: 24px;
   }
 }
+

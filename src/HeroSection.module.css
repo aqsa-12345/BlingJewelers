@@ -1,14 +1,9 @@
-/* ===== HeroSection.module.css ===== */
-
-/* Main hero container */
 .heroContainer {
   position: relative;
   height: 500px;
   overflow: hidden;
   font-family: "Poppins", sans-serif;
 }
-
-/* Background image */
 .heroImage {
   width: 100%;
   height: 100%;
@@ -16,13 +11,10 @@
   filter: brightness(75%);
   transition: transform 1.5s ease, filter 0.5s ease;
 }
-
 /* .heroContainer:hover .heroImage {
   transform: scale(1.05);
   filter: brightness(85%);
 } */
-
-/* Overlay content */
 .overlay {
   position: absolute;
   top: 50%;
@@ -33,8 +25,6 @@
   width: 100%;
   padding: 0 20px;
 }
-
-/* Headline */
 .title {
   font-size: 3rem;
   font-weight: 700;
@@ -43,16 +33,12 @@
   letter-spacing: 2px;
   margin-bottom: 10px;
 }
-
-/* Subtitle */
 .subtitle {
   font-size: 1.3rem;
   margin-bottom: 25px;
   color: #f8f8f8;
   text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
 }
-
-/* Button styling */
 .shopButton {
   background-color: #f5e1b9;
   border: none;
@@ -63,7 +49,6 @@
   letter-spacing: 1px;
   transition: all 0.3s ease-in-out;
 }
-
 .shopButton:hover {
   background-color: #e2c77d;
   transform: translateY(-2px);

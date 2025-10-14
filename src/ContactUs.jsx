@@ -15,7 +15,6 @@ function ContactUs() {
         </div>
 
         <form className={styles.formContainer}>
-          {/* Full Name */}
           <div className={styles.fieldGroup}>
             <label htmlFor="name" className={styles.label}>
               Full Name
@@ -27,8 +26,6 @@ function ContactUs() {
               placeholder=""
             />
           </div>
-
-          {/* Email */}
           <div className={styles.fieldGroup}>
             <label htmlFor="email" className={styles.label}>
               Email Address
@@ -40,8 +37,6 @@ function ContactUs() {
               placeholder=""
             />
           </div>
-
-          {/* Subject */}
           <div className={styles.fieldGroup}>
             <label htmlFor="subject" className={styles.label}>
               Subject
@@ -53,8 +48,6 @@ function ContactUs() {
               placeholder=""
             />
           </div>
-
-          {/* Message */}
           <div className={styles.fieldGroup}>
             <label htmlFor="message" className={styles.label}>
               Message
@@ -66,8 +59,6 @@ function ContactUs() {
               placeholder=""
             ></textarea>
           </div>
-
-          {/* Button */}
           <div className="d-grid">
             <button type="submit" className={styles.sendButton}>
               Send Message

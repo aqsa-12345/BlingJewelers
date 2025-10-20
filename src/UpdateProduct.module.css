@@ -1,0 +1,59 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: url("/banner.jpg") center/cover no-repeat fixed;
+  font-family: "Poppins", sans-serif;
+  min-height: 100vh;
+}
+.formContainer {
+  max-width: 550px;
+  margin: 60px auto;
+  background-color: #fff8f0;
+  padding: 35px 40px;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(180, 150, 120, 0.2);
+  border: 1px solid #f2d1a0;
+}
+
+/* Heading */
+h2 {
+  color: #b8860b;
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+/* Labels */
+label {
+  font-weight: 500;
+  color: #333;
+}
+
+/* Input fields */
+input,
+textarea,
+select {
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+/* Buttons */
+button {
+  border-radius: 8px;
+  background-color: #b8860b;
+  border: none;
+  color: white;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+button:hover {
+  background-color: #a07606;
+}
+
+/* Responsive tweaks */
+@media (max-width: 576px) {
+  .formContainer {
+    margin: 30px 15px;
+    padding: 25px 20px;
+  }
+}

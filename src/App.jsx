@@ -11,14 +11,8 @@ function App()
 {
     return(
     <>
-    {/* <LandingPage/> */}
-     {/* <LoginPage/> */}
-     {/* <ContactUs/> */}
-    {/* <RegistrationPage/> */}
-      {/* <ReviewPage/> */}
-      {/* <ProductDisplay/> */}
     </>
-    )
+    ) 
 
 }
 export default App;

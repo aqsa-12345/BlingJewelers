@@ -5,9 +5,7 @@ function ContactUs() {
     <div className={styles.bgContainer}>
       <div className={styles.glassCard}>
         <div className="text-center mb-4">
-          <div className={styles.logoCircle}>
-            <i className="bi bi-envelope-paper"></i>
-          </div>
+         
           <h3 className={styles.logoText}>Contact Us</h3>
           <p className={styles.subtitleText}>
             We'd love to hear from you! Get in touch with our team.

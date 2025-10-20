@@ -1,0 +1,92 @@
+
+.bgContainer {
+  background: url("/banner.jpg") center/cover no-repeat; /* same as login page */
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Glass effect card for dashboard */
+.dashboardCard {
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(12px);
+  border-radius: 20px;
+  padding: 40px 45px;
+  width: 100%;
+  max-width: 500px;
+  box-shadow: 0 4px 25px rgba(0, 0, 0, 0.25);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  text-align: center;
+}
+
+/* Dashboard Title */
+.title {
+  color: #4b3c2f; /* same brown shade as login */
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+/* Subtitle text */
+.subtitle {
+  color: #6b5644;
+  margin-bottom: 30px;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+/* Button group layout */
+.buttonGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* Buttons styled to match jewelry theme */
+.btn {
+  background-color: #4b3c2f;
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 10px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #6b5644;
+  transform: scale(1.05);
+}
+
+/* Logout button - slightly different color */
+.logoutBtn {
+  background-color: #4b3c2f;
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 10px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.logoutBtn:hover {
+  background-color: #a78a62;
+  transform: scale(1.05);
+}
+
+/* Responsive */
+@media (max-width: 576px) {
+  .dashboardCard {
+    padding: 30px 25px;
+  }
+  .title {
+    font-size: 1.6rem;
+  }
+}

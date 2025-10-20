@@ -11,12 +11,15 @@
   },
   "dependencies": {
     "@fortawesome/fontawesome-free": "^7.0.1",
+    "@hookform/resolvers": "^5.2.2",
     "bootstrap": "^5.3.8",
     "react": "^19.1.1",
     "react-bootstrap": "^2.10.10",
     "react-dom": "^19.1.1",
+    "react-form-hook": "^0.0.1",
     "react-router-dom": "^7.9.4",
-    "styled-components": "^6.1.19"
+    "styled-components": "^6.1.19",
+    "zod": "^4.1.12"
   },
   "devDependencies": {
     "@eslint/js": "^9.35.0",

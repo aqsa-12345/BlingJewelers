@@ -1,0 +1,26 @@
+.formContainer {
+  max-width: 500px;
+  margin: 50px auto;
+  background-color: #fff;
+  padding: 30px 35px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  color: #c0392b; 
+}
+
+label {
+  font-weight: 500;
+  color: #333;
+}
+
+input {
+  border-radius: 8px;
+}
+
+button {
+  margin-top: 10px;
+  border-radius: 8px;
+}

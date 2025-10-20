@@ -5,8 +5,6 @@
   margin-top: 3rem;
   border-top: 1px solid #ddd;
 }
-
-/* 🔲 Top Black Strip */
 .topStrip {
   background-color: #000;
   color: #fff;
@@ -77,8 +75,6 @@
 .linkList a:hover {
   color: #4b3c2f;
 }
-
-/* 📨 Newsletter Section */
 .newsletter p {
   color: #6c757d;
   font-size: 0.85rem;

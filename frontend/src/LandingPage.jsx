@@ -1,4 +1,4 @@
-import HeroSection from "./Herosection"
+import HeroSection from "./HeroSection"
 import Navigation from "./Navigation"
 import Items from "./Items"
 import Footer from "./Footer"
